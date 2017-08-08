@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-token_="خلي التوكن اهنا حب"
+token_="268760567:AAE6ui6ZtxKteyOtTA4qYoIF-NyN1Y2mUQ8"
 
 function print_logo() {
 
