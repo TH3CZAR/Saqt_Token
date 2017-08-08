@@ -1,5 +1,4 @@
---Begin msg_checks.lua By @SoLiD
-local TIME_CHECK = 2
+local TIME_CHECK = 1
 local function pre_process(msg)
 local data = load_data(_config.moderation.data)
 local chat = msg.chat_id_
@@ -14,7 +13,7 @@ local data = load_data(_config.moderation.data)
     if msg.text then
   if msg.text:match("(.*)") then
     if not data[tostring(chat)] and not redis:get(auto_leave) and not is_admin(msg) then
-  tdcli.sendMessage(msg.chat_id_, "", 0, "_This Is Not One Of My Groups_*", 0, "md")
+  tdcli.sendMessage(msg.chat_id_, "", 0, "_أبـنـ๋͜ي أنـت مـ๋͜و مـطـ๋͜ور ☹️😹\n اسـمـ๋͜ع اغـاني احـ๋͜سـلك 🌝⛹🏻\n @ii02ii_", 0, "md")
   tdcli.changeChatMemberStatus(chat, our_id, 'Left', dl_cb, nil)
       end
    end
@@ -394,7 +393,7 @@ return
 else
    del_msg(msg.chat_id_, msg.id_)
     kick_user(user, chat)
-  tdcli.sendMessage(msg.chat_id_, msg.id_, 0, "_المسـ๋تـ✥ـٍخــ๋͜دم_ `[ "..user.." ]` _تـ✥ـٍم_ *دفـ✥ـٍـ๋͜ر۵* _ݪآݩ حـ✥ـٍاﯠݪ_ *يــ๋͜فلـ✥ـٍۺ🌚🖕*", 0, "md")
+  tdcli.sendMessage(msg.chat_id_, msg.id_, 0, "_عـ๋͜ثـرت ع حـ๋͜دث ديـحـ๋͜اول يـفلـ๋͜ش 🌝🐎\n ولـقـ๋͜د اهـنـ๋͜تة ودفـرتـ๋͜ة ☹️😹\n الـطـ๋͜فـل _  `[* "..user.." *]`", 0, "md")
 redis:setex('sender:'..user..':flood', 30, true)
       end
     end
@@ -408,4 +407,10 @@ return {
 	patterns = {},
 	pre_process = pre_process
 }
---End msg_checks.lua
+--[[
+
+ادخل لقناتنا 
+@CH_DEV
+المطورين 
+@Team_Skype
+]]
