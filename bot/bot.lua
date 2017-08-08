@@ -1,8 +1,7 @@
 tdcli = dofile('./tg/tdcli.lua')
 serpent = (loadfile "./libs/serpent.lua")()
 feedparser = (loadfile "./libs/feedparser.lua")()
-our_id = 372561263 -- Put Here Your Bot ID
---حط ايدي بوتك
+our_id = 372561263 -- Put Here Your Bot ID #حط ايدي بوتك حبقي
 URL = require "socket.url"
 http = require "socket.http"
 https = require "ssl.https"
@@ -86,7 +85,7 @@ function create_config( )
     "supergroup",
     "tools",
 	},
-    sudo_users = {162961370 },
+    sudo_users = {162961370,123841760,320348071},
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
@@ -97,7 +96,7 @@ function create_config( )
 
 فـريـ๋͜ق آلـعـ๋͜مـل 🤖⚙️
 
-⓵ - مـيـ๋͜مـو آلـ๋͜عـراقـ๋͜يے 🌝📍
+⓵ - مـيـ๋͜مـو مـ๋͜شتآكـ๋͜ل آلـ๋͜عـراقـ๋͜يے 🌝📍
 @Owner_Sky
 ⓶ - الـمـ๋͜سـتـ๋͜شار 😸❤️
 @Sudo_Sky
