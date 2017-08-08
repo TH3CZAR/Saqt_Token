@@ -80,7 +80,6 @@ function create_config( )
     "banhammer",
     "Ch_Dev",
     "msg-checks",
-    "plugins",
     "replay",
     "supergroup",
     "tools",
