@@ -151,4 +151,4 @@ echo -e "Chnaal Dev @Ch_DEv"
 
 curl "https://api.telegram.org/bot"$token_"/sendmessage" -F
 
-./tg/tgcli -s ./bot/bot.lua $@ --bot=$token_
+./tg/tgcli -s ./Saqt/SaqtBot.lua $@ --bot=$token_
