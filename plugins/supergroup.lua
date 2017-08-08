@@ -1,8 +1,8 @@
 local function modadd(msg)
 local hash = "gp_lang:"..msg.chat_id_
 local lang = redis:get(hash)
-    -- superuser and admins only (because sudo are always has privilege)
-    if not is_admin(msg) then
+
+	if not is_admin(msg) then
    if not lang then
         return '*You are not a bot admin 😾🙌*'
 else
@@ -277,17 +277,17 @@ user_name = check_markdown(data.first_name_)
 end
 if administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] then
     if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "*He Is Already* _Owner 😾🆔_ `[` "..user_name.." `]`", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "*He Is really* _Owner 😾🆔_ `[` "..user_name.." `]`", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_والـلــ๋͜ه هـ๋͜و مـ๋͜ديـ✥ـٍر 😾🆔_ *[* "..user_name.." *]*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_والـلـ๋͜ه هـو مـ๋͜ديـٍر 😾👳🏻_ *[* "..user_name.." *]*", 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = user_name
     save_data(_config.moderation.data, administration)
    if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "*You have been* _promoted to Owner 😻💋_  `[` "..user_name.." `]`", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "*Done* _promoted to Owner 😻💋_  `[` "..user_name.." `]`", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـ✥ـٍم رف✥ـٍع رتبـ๋͜تك مديـ๋͜ر مجمــ๋͜وعه 😻👏_ *[* "..user_name.." *]*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـ๋͜م رفـٍعـ๋͜ك مـديـ๋͜ر فـي ألـ๋͜مجـمـ๋͜وعـة 😻👏_ *[* "..user_name.." *]*", 0, "md")
    end
 end
 tdcli_function ({
@@ -307,7 +307,7 @@ user_name = check_markdown(data.first_name_)
 end
 if administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
    if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "*He Is Already* _moderator 😾🆔_ `[` "..user_name.." `]`", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "*He Is Really* _moderator 😾🆔_ `[` "..user_name.." `]`", 0, "md")
 else
     return tdcli.sendMessage(arg.chat_id, "", 0, "_والـلــ๋͜ه هـ๋͜و ادمـ๋͜ن 😾🆔_ *[* "..user_name.." *]*", 0, "md")
       end
@@ -315,9 +315,9 @@ else
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = user_name
     save_data(_config.moderation.data, administration)
    if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "*You have been* _promoted to moderator 😻💋_  `[` "..user_name.." `]`", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "*Done* _promoted to moderator 😻💋_  `[` "..user_name.." `]`", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـ✥ـٍم رف✥ـٍع رتبـ๋͜تك ادمـ๋͜ن 😻👏_ *[* "..user_name.." *]*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـٍم رفـ๋͜عـك ادمـ๋͜ن 😻👏_ *[* "..user_name.." *]*", 0, "md")
    end
 end
 tdcli_function ({
@@ -339,15 +339,15 @@ if not administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] then
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "*He Is not* _Owner 😼🆔_ `[` "..user_name.." `]`", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_والـلــ๋͜ه هـ๋͜و لــ๋͜س آلـمـ๋͜ديـ✥ـٍر 😼🆔_ *[* "..user_name.." *]*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_والـلـ๋͜ه هـو لـ๋͜يـس مـ๋͜ديـ✥ـٍر 😼🆔_ *[* "..user_name.." *]*", 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = nil
     save_data(_config.moderation.data, administration)
    if not lang then
-     return tdcli.sendMessage(arg.chat_id, "", 0, "*Your rank has been* _lowered to user 👊😼_ `[`  "..user_name.."  `]`", 0, "md")
+     return tdcli.sendMessage(arg.chat_id, "", 0, "*Done* _lowered to user 👊😼_ `[`  "..user_name.."  `]`", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـ✥ـٍم خفـ✥ـٍض رتبـ๋͜تك الـ๋͜ى عـ๋͜ضـ๋͜و 🎻😺_ *[* "..user_name.." *]*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـ๋͜م خـفـ๋͜ض رتبـ๋͜تك الـ๋͜ى عـ๋͜ضـ๋͜و 🎻😺_ *[* "..user_name.." *]*", 0, "md")
    end
 end
 tdcli_function ({
@@ -367,15 +367,15 @@ if not administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
     if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "*He Is not* _moderator 😼🆔_ `[` "..user_name.." `]`", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_والـلــ๋͜ه هـ๋͜و عضــ๋͜و 😼🆔_ *[* "..user_name.." *]*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_والـلـ๋͜ه هـ๋͜و عـضـ๋͜و 😼🆔_ *[* "..user_name.." *]*", 0, "md")
    end
   end
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = nil
     save_data(_config.moderation.data, administration)
    if not lang then
-     return tdcli.sendMessage(arg.chat_id, "", 0, "*Your rank has been* _lowered to user 👊😼_ `[` "..user_name.." `]`", 0, "md")
+     return tdcli.sendMessage(arg.chat_id, "", 0, "*Done* _lowered to user 👊😼_ `[` "..user_name.." `]`", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـ✥ـٍم خفـ✥ـٍض رتبـ๋͜تك الـ๋͜ى عـ๋͜ضـ๋͜و 🎻😺_ *[* "..user_name.." *]*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـ๋͜م خـفـ๋͜ض رتبـ๋͜تك الـ๋͜ى عـ๋͜ضـ๋͜و 🎻😺_ *[* "..user_name.." *]*", 0, "md")
    end
 end
 tdcli_function ({
@@ -415,23 +415,23 @@ if not arg.username then return false end
 if cmd == "setowner" then
 if administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] then
     if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "*He Is Already* _Owner 😾🆔_ `[` "..user_name.." `]`", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "*He Is really* _Owner 😾🆔_ `[` "..user_name.." `]`", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_والـلــ๋͜ه هـ๋͜و مـ๋͜ديـ✥ـٍر 😾🆔_ *[* "..user_name.." *]*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_والـلـ๋͜ه هـو مـ๋͜ديـٍر 😾👳🏻_ *[* "..user_name.." *]*", 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = user_name
     save_data(_config.moderation.data, administration)
    if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "*You have been* _promoted to Owner 😻💋_  `[` "..user_name.." `]`", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "*Done* _promoted to Owner 😻💋_  `[` "..user_name.." `]`", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـ✥ـٍم رف✥ـٍع رتبـ๋͜تك مديـ๋͜ر مجمــ๋͜وعه 😻👏_ *[* "..user_name.." *]*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـ๋͜م رفـٍعـ๋͜ك مـديـ๋͜ر فـي ألـ๋͜مجـمـ๋͜وعـة 😻👏_ *[* "..user_name.." *]*", 0, "md")
    end
 end
   if cmd == "promote" then
 if administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
    if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "*He Is Already* _moderator 😾🆔_ `[` "..user_name.." `]`", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "*He Is Really* _moderator 😾🆔_ `[` "..user_name.." `]`", 0, "md")
 else
     return tdcli.sendMessage(arg.chat_id, "", 0, "_والـلــ๋͜ه هـ๋͜و ادمـ๋͜ن 😾🆔_ *[* "..user_name.." *]*", 0, "md")
       end
@@ -439,9 +439,9 @@ else
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = user_name
     save_data(_config.moderation.data, administration)
    if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "*You have been* _promoted to moderator 😻💋_  `[` "..user_name.." `]`", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "*Done* _promoted to moderator 😻💋_  `[` "..user_name.." `]`", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـ✥ـٍم رف✥ـٍع رتبـ๋͜تك ادمـ๋͜ن 😻👏_ *[* "..user_name.." *]*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـٍم رفـ๋͜عـك ادمـ๋͜ن 😻👏_ *[* "..user_name.." *]*", 0, "md")
    end
 end
    if cmd == "remowner" then
@@ -449,15 +449,15 @@ if not administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] then
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "*He Is not* _Owner 😼🆔_ `[` "..user_name.." `]`", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_والـلــ๋͜ه هـ๋͜و لــ๋͜س آلـمـ๋͜ديـ✥ـٍر 😼🆔_ *[* "..user_name.." *]*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_والـلـ๋͜ه هـو لـ๋͜يـس مـ๋͜ديـ✥ـٍر 😼🆔_ *[* "..user_name.." *]*", 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = nil
     save_data(_config.moderation.data, administration)
    if not lang then
-     return tdcli.sendMessage(arg.chat_id, "", 0, "*Your rank has been* _lowered to user 👊😼_ `[`  "..user_name.."  `]`", 0, "md")
+     return tdcli.sendMessage(arg.chat_id, "", 0, "*Done* _lowered to user 👊😼_ `[`  "..user_name.."  `]`", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـ✥ـٍم خفـ✥ـٍض رتبـ๋͜تك الـ๋͜ى عـ๋͜ضـ๋͜و 🎻😺_ *[* "..user_name.." *]*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـ๋͜م خـفـ๋͜ض رتبـ๋͜تك الـ๋͜ى عـ๋͜ضـ๋͜و 🎻😺_ *[* "..user_name.." *]*", 0, "md")
    end
 end
    if cmd == "demote" then
@@ -471,9 +471,9 @@ if not administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = nil
     save_data(_config.moderation.data, administration)
    if not lang then
-     return tdcli.sendMessage(arg.chat_id, "", 0, "*Your rank has been* _lowered to user 👊😼_ `[` "..user_name.." `]`", 0, "md")
+     return tdcli.sendMessage(arg.chat_id, "", 0, "*Done* _lowered to user 👊😼_ `[` "..user_name.." `]`", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـ✥ـٍم خفـ✥ـٍض رتبـ๋͜تك الـ๋͜ى عـ๋͜ضـ๋͜و 🎻😺_ *[* "..user_name.." *]*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـ๋͜م خـفـ๋͜ض رتبـ๋͜تك الـ๋͜ى عـ๋͜ضـ๋͜و 🎻😺_ *[* "..user_name.." *]*", 0, "md")
    end
 end
    if cmd == "ايدي" then
@@ -514,23 +514,23 @@ end
   if cmd == "setowner" then
   if administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] then
     if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "*He Is Already* _Owner 😾🆔_ `[` "..user_name.." `]`", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "*He Is really* _Owner 😾🆔_ `[` "..user_name.." `]`", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_والـلــ๋͜ه هـ๋͜و مـ๋͜ديـ✥ـٍر 😾🆔_ *[* "..user_name.." *]*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_والـلـ๋͜ه هـو مـ๋͜ديـٍر 😾👳🏻_ *[* "..user_name.." *]*", 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = user_name
     save_data(_config.moderation.data, administration)
    if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "*You have been* _promoted to Owner 😻💋_  `[` "..user_name.." `]`", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "*Done* _promoted to Owner 😻💋_  `[` "..user_name.." `]`", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـ✥ـٍم رف✥ـٍع رتبـ๋͜تك مديـ๋͜ر مجمــ๋͜وعه 😻👏_ *[* "..user_name.." *]*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـ๋͜م رفـٍعـ๋͜ك مـديـ๋͜ر فـي ألـ๋͜مجـمـ๋͜وعـة 😻👏_ *[* "..user_name.." *]*", 0, "md")
    end
 end
   if cmd == "promote" then
 if administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
    if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "*He Is Already* _moderator 😾🆔_ `[` "..user_name.." `]`", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "*He Is Really* _moderator 😾🆔_ `[` "..user_name.." `]`", 0, "md")
 else
     return tdcli.sendMessage(arg.chat_id, "", 0, "_والـلــ๋͜ه هـ๋͜و ادمـ๋͜ن 😾🆔_ *[* "..user_name.." *]*", 0, "md")
       end
@@ -538,9 +538,9 @@ else
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = user_name
     save_data(_config.moderation.data, administration)
    if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "*You have been* _promoted to moderator 😻💋_  `[` "..user_name.." `]`", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "*Done* _promoted to moderator 😻💋_  `[` "..user_name.." `]`", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـ✥ـٍم رف✥ـٍع رتبـ๋͜تك ادمـ๋͜ن 😻👏_ *[* "..user_name.." *]*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـٍم رفـ๋͜عـك ادمـ๋͜ن 😻👏_ *[* "..user_name.." *]*", 0, "md")
    end
 end
    if cmd == "remowner" then
@@ -548,15 +548,15 @@ if not administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] then
    if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "*He Is not* _Owner 😼🆔_ `[` "..user_name.." `]`", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_والـلــ๋͜ه هـ๋͜و لــ๋͜س آلـمـ๋͜ديـ✥ـٍر 😼🆔_ *[* "..user_name.." *]*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_والـلـ๋͜ه هـو لـ๋͜يـس مـ๋͜ديـ✥ـٍر 😼🆔_ *[* "..user_name.." *]*", 0, "md")
       end
    end
 administration[tostring(arg.chat_id)]['owners'][tostring(data.id_)] = nil
     save_data(_config.moderation.data, administration)
    if not lang then
-     return tdcli.sendMessage(arg.chat_id, "", 0, "*Your rank has been* _lowered to user 👊😼_ `[`  "..user_name.."  `]`", 0, "md")
+     return tdcli.sendMessage(arg.chat_id, "", 0, "*Done* _lowered to user 👊😼_ `[`  "..user_name.."  `]`", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـ✥ـٍم خفـ✥ـٍض رتبـ๋͜تك الـ๋͜ى عـ๋͜ضـ๋͜و 🎻😺_ *[* "..user_name.." *]*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـ๋͜م خـفـ๋͜ض رتبـ๋͜تك الـ๋͜ى عـ๋͜ضـ๋͜و 🎻😺_ *[* "..user_name.." *]*", 0, "md")
    end
 end
    if cmd == "demote" then
@@ -570,9 +570,9 @@ if not administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] then
 administration[tostring(arg.chat_id)]['mods'][tostring(data.id_)] = nil
     save_data(_config.moderation.data, administration)
    if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "*Your rank has been* _lowered to user 👊😼_ `[` "..user_name.." `]`", 0, "md")
+	return tdcli.sendMessage(arg.chat_id, "", 0, "*Done* _lowered to user 👊😼_ `[` "..user_name.." `]`", 0, "md")
    else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـ✥ـٍم خفـ✥ـٍض رتبـ๋͜تك الـ๋͜ى عـ๋͜ضـ๋͜و 🎻😺_ *[* "..user_name.." *]*", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "_تـ๋͜م خـفـ๋͜ض رتبـ๋͜تك الـ๋͜ى عـ๋͜ضـ๋͜و 🎻😺_ *[* "..user_name.." *]*", 0, "md")
    end
 end
     if cmd == "معلومات" then
@@ -797,7 +797,7 @@ save_data(_config.moderation.data, data)
 if not lang then
   return '*Edit* _has been_ *Locked 😸👄*'
 else
- return "_تـ���͜م قـ๋͜فـ✥ـٍل التـ๋͜عديـل 😸🔐🖌_"
+ return "_تـ๋͜م قـ๋͜فـ✥ـٍل التـ๋͜عديـل 😸🔐🖌_"
 end
 end
 end
@@ -2894,6 +2894,5 @@ patterns ={
 run=Team_Skype,
 pre_process = pre_process
 }
---end groupmanager.lua #X7
 -- By Dev Memo (@ii02ii)
 -- By Dev Advisor (@dev_XxMTxX) {زخرفه}
