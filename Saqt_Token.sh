@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-Saqt_Token=$(cd $(dirname $0); pwd)
-cd $Saqt_Token
+THIS_DIR=$(cd $(dirname $0); pwd)
+cd $THIS_DIR
 
 install() {
 	    cd tg
@@ -102,5 +102,5 @@ echo -e "Chnaal Dev @Ch_DEv"
 
  echo -e "\e[38;5;77m" 
 
-   ./tg/tgcli -s ./Saqt/Saqt_Token.lua $@
+  ./tg/tgcli -s ./Saqt/SaqtBot.lua $@
 fi
