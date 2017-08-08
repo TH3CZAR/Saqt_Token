@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-cd $HOME/Saqt_Token.sh
+Saqt_Token=$(cd $(dirname $0); pwd)
+cd $Saqt_Token
 
 install() {
 	    cd tg
