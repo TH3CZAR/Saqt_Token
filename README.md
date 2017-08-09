@@ -57,3 +57,8 @@ git clone https://github.com/ii02ii/Saqt_Token.git && cd Saqt_Token && chmod +x 
 &
 
 [ قناة المطورين 🤖✌️](https://telegram.me/Team_Skype)
+
+* * *
+
+# ملاحظة جميع الاوامر لا تستخدمِ 
+# [!/#]
