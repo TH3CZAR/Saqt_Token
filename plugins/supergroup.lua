@@ -1,3 +1,14 @@
+--[[
+
+ _____   _       _   _     
+|_   _| | |     | \ | |    
+  | |   | |     |  \| |    
+  | |   | |___  | |\  |    
+  |_|   |_____| |_| \_|    
+
+
+]]--
+
 local function modadd(msg)
 local hash = "gp_lang:"..msg.chat_id_
 local lang = redis:get(hash)
