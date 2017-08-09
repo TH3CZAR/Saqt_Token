@@ -30,6 +30,5 @@ git clone https://github.com/ii02ii/Saqt_Token.git && cd Saqt_Token && chmod +x 
 
 # Developers Bot
 
-```
-# [X7_BOT](https://telegram.me/BOTHU)
-
+#1- [مـيـ๋͜مـو مـ๋͜شتآكـ๋͜ل آلـ๋͜عـراقـ๋͜يے](https://telegram.me/Ii02iI)
+#2-
