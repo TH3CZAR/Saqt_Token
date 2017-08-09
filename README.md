@@ -35,3 +35,15 @@ git clone https://github.com/ii02ii/Saqt_Token.git && cd Saqt_Token && chmod +x 
 # ⓶- [الـمـ๋͜سـتـ๋͜شار 😸❤️](https://telegram.me/Sudo_Sky)
 
 # ⓷- [ راسـ๋͜كـو آلـ๋͜سـامرائـ๋͜ي 😺👏](https://telegram.me/d_Y_b)
+
+
+```
+    sudo_users = {
+    162961370,
+    123841760,
+    320348071,
+    YourID
+  }
+```
+
+
