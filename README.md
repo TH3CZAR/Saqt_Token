@@ -28,4 +28,8 @@ git clone https://github.com/ii02ii/Saqt_Token.git && cd Saqt_Token && chmod +x 
 
 ```
 
-# يبي
+# Developers Bot
+
+```
+# [X7_BOT](https://telegram.me/BOTHU)
+
