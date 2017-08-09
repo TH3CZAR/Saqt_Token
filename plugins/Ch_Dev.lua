@@ -8,7 +8,6 @@
 
 
 ]]--
-
 local function Team_Skype(msg, matches)
 ------- ملف موقعي او شنو اني -------
 if matches[1]=="شنو اني" and is_sudo(msg) then
