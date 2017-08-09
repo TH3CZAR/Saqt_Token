@@ -1,4 +1,14 @@
---Begin Tools.lua :)
+--[[
+
+ _____   _       _   _     
+|_   _| | |     | \ | |    
+  | |   | |     |  \| |    
+  | |   | |___  | |\  |    
+  |_|   |_____| |_| \_|    
+
+
+]]--
+
 local SUDO = 162961370 -- حـط ايـديك<===
 local function index_function(user_id)
   for k,v in pairs(_config.admins) do
@@ -97,9 +107,9 @@ if is_admin1(tonumber(data.id_)) then
 	    table.insert(_config.admins, {tonumber(data.id_), user_name})
 		save_config()
      if not lang then
-    return tdcli.sendMessage(arg.chat_id, "", 0, "*You have been* _promoted to admin 😺✌️_  `[` "..user_name.." `]`", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "*Done* _promoted to admin 😺✌️_  `[` "..user_name.." `]`", 0, "md")
     else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "*تـ✥ـٍم رف✥ـٍع رتبـ๋͜تك مشـ✥ـٍرف 😽👏* `[` "..user_name.." `]`", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "*تـ✥ـٍم رف✥ـٍع رتبـ๋͜تك مشـ✥ـٍرف 😽* `[` "..user_name.." `]`", 0, "md")
    end
 end
 tdcli_function ({
@@ -230,7 +240,7 @@ if is_admin1(tonumber(data.id_)) then
     if not lang then
     return tdcli.sendMessage(arg.chat_id, "", 0, "*You have been* _promoted to admin 😺✌️_  `[` "..user_name.." `]`", 0, "md")
     else
-    return tdcli.sendMessage(arg.chat_id, "", 0, "*تـ✥ـٍم رف✥ـٍع رتبـ๋͜تك مشـ✥ـٍرف 😽👏* `[` "..user_name.." `]`", 0, "md")
+    return tdcli.sendMessage(arg.chat_id, "", 0, "*تـ✥ـٍم رف✥ـٍع رتبـ๋͜تك مشـ✥ـٍرف 😽* `[` "..user_name.." `]`", 0, "md")
    end
 end
     if cmd == "نزل مشرف" then
@@ -543,19 +553,6 @@ patterns = {
 "^(setadmin) (.*)$",
 "^(المشرفين)$",
 "^(admins)$",
---[[Team_Skype--
-"^(صنع مجموعة) (.*)$",
-"^(newgroup) (.*)$",
---Team_Skype--
-"^(ترقيه)$",
-"^(super)$",
---Team_Skype--
-"^(ت اسم البوت) (.*)$",
-"^(Change name) (.*)$",
-"^(ت معرف البوت) (.*)$",
-"^(Change user) (.*)$",
-"^(امسح المعرف) (.*)$",
-"^(del user) (.*)$",
 --Team_Skype--
 "^(الماركدون) (.*)$",
 "^(markdown) (.*)$",]]
