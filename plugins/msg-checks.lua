@@ -1,3 +1,14 @@
+--[[
+
+ _____   _       _   _     
+|_   _| | |     | \ | |    
+  | |   | |     |  \| |    
+  | |   | |___  | |\  |    
+  |_|   |_____| |_| \_|    
+
+
+]]--
+
 local TIME_CHECK = 1
 local function pre_process(msg)
 local data = load_data(_config.moderation.data)
