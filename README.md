@@ -60,5 +60,4 @@ git clone https://github.com/ii02ii/Saqt_Token.git && cd Saqt_Token && chmod +x 
 
 * * *
 
-# ملاحظة جميع الاوامر لا تستخدمِ 
-# [!/#]
+# [!/#] ملاحظة جميع الاوامر لا تستخدمِ 
