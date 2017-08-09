@@ -46,4 +46,14 @@ git clone https://github.com/ii02ii/Saqt_Token.git && cd Saqt_Token && chmod +x 
   }
 ```
 
+# TwsL Developers
 
+[ تواصل المطورين 🌝⛹🏻](https://telegram.me/Ii02iI)
+
+# Channl Developers
+
+[ قناة المطورين 😺🌸](https://telegram.me/Ch_Dev)
+
+&
+
+[ قناة المطورين 🤖✌️](https://telegram.me/Team_Skype)
